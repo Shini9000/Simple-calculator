@@ -28,8 +28,6 @@ def equals():
 
         equation_text = ""
 
-
-
 def clear():
 
     global equation_text
@@ -53,6 +51,8 @@ label.pack()
 
 frame = Frame(window)
 frame.pack()
+
+# Numbers
 
 button1 = Button(frame, text=1, height=4, width=9, font=35, bg="#5A5A5A", fg="white",
                  command=lambda: button_press(1))
@@ -94,6 +94,7 @@ button0 = Button(frame, text=0, height=4, width=9, font=35, bg="#5A5A5A", fg="wh
                  command=lambda: button_press(0))
 button0.grid(row=3, column=0)
 
+# Functions // Symbols
 
 plus = Button(frame, text="+", height=4, width=9, font=35, bg="#5A5A5A", fg="white",
                  command=lambda: button_press("+"))
